@@ -51,14 +51,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        logout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                FirebaseAuth.getInstance().signOut();
-                startActivity(new Intent(getApplicationContext(),Login.class));
-                finish();
-            }
-        });
     }
 
     @Override
@@ -72,6 +64,11 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId() == R.id.resetUserPassword){
             startActivity(new Intent(getApplicationContext(),Resetpassword.class));
+        }
+        if (item.getItemId() == R.id.logoutbtn){
+            FirebaseAuth.getInstance().signOut();
+            startActivity(new Intent(getApplicationContext(),Login.class));
+            finish();
         }
         return super.onOptionsItemSelected(item);
     }
