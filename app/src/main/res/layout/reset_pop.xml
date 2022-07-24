@@ -15,6 +15,7 @@
         android:ems="10"
         android:hint="Reset Email"
         android:inputType="textEmailAddress"
+        android:minHeight="48dp"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
