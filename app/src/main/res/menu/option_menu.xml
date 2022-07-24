@@ -7,4 +7,7 @@
     <item
         android:id="@+id/resetUserPassword"
         android:title="Reset Password" />
+    <item
+        android:id="@+id/aboutus"
+        android:title="About Us" />
 </menu>
