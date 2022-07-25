@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Stint"
         tools:targetApi="31">
         <activity
+            android:name=".Schedule"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false" />
+        <activity
             android:name=".Aboutus"
             android:exported="false" />
         <activity
