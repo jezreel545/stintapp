@@ -39,19 +39,5 @@ public class TimeIn extends AppCompatActivity {
         calendar =Calendar.getInstance();
         simpleDateFormat= new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
         Date=simpleDateFormat.format(calendar.getTime());
-
-        BtnTimeIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                GetDateAndTime.setText(Date);
-                FirebaseUser user = fAuth.getCurrentUser();
-                DocumentReference df = fStore.collection("Users").document(user.getUid());
-                Map<String,Object> userInfo = new HashMap<>();
-                userInfo.put("Fullname",registerfullname.getText().toString());
-                userInfo.put("UserEmail",registeremail.getText().toString());
-            }
-        });
-
-
     }
 }
