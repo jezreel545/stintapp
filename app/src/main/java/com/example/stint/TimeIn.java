@@ -22,7 +22,7 @@ public class TimeIn extends AppCompatActivity {
     Calendar calendar;
     SimpleDateFormat simpleDateFormat;
     String Date;
-    TextView GetDateAndTime, GetDateAndTime2;
+    TextView GetDateAndTime;
     Button BtnTimeIn,BtnTimeOut;
     FirebaseAuth auth;
     FirebaseFirestore fStore;
@@ -33,7 +33,6 @@ public class TimeIn extends AppCompatActivity {
         setContentView(R.layout.activity_time_in);
 
         GetDateAndTime=findViewById(R.id.TimeInView);
-        GetDateAndTime2=findViewById(R.id.TimeView);
         BtnTimeIn=findViewById(R.id.TimeInbtn);
         BtnTimeIn=findViewById(R.id.TimeOutbtn);
         calendar =Calendar.getInstance();

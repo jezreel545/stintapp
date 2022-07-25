@@ -12,40 +12,27 @@
         android:layout_width="413dp"
         android:layout_height="223dp"
         android:background="#0C0C0C"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.057"
         app:srcCompat="@drawable/logostarecase" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="379dp"
         android:layout_height="375dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
         android:fontFamily="sans-serif-smallcaps"
         android:text="A startup called Starecase strives to strike a balance between technology and quality of life. It strives to improve the quality of life at the same rate that technology advances. Given the company's aim and mission, starecase is motivated by the desire to increase public awareness of the industry's transparency. The company offers assistance that could lead to a significant stride in the development of new enterprises as well as solutions that can be applied to assist small businesses. "
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78"
-        tools:layout_editor_absoluteX="16dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="221dp"
-        android:layout_height="33dp"
-        android:text="CEO GENERAL REZHEN LAZARTE"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.945" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
