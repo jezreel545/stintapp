@@ -6,29 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".TimeIn">
 
-    <TextView
-        android:id="@+id/TimeView"
-        android:layout_width="117dp"
-        android:layout_height="62dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="196dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.432"
-        app:layout_constraintStart_toEndOf="@+id/TimeInView"
-        app:layout_constraintTop_toBottomOf="@+id/TimeOutbtn" />
-
-    <Button
-        android:id="@+id/TimeOutbtn"
-        android:layout_width="113dp"
-        android:layout_height="52dp"
-        android:layout_marginTop="52dp"
-        android:text="Time Out"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toEndOf="@+id/TimeInbtn"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="299dp"
@@ -47,19 +24,17 @@
         android:id="@+id/TimeInView"
         android:layout_width="117dp"
         android:layout_height="62dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginBottom="194dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginBottom="200dp"
         android:text="GetDateAndTime"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TimeInbtn" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/TimeInbtn"
         android:layout_width="113dp"
         android:layout_height="52dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="148dp"
         android:layout_marginTop="52dp"
         android:layout_marginBottom="9dp"
         android:text="   Time In  "
