@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/ANDROID STUDIO/stintapp/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/ANDROID STUDIO/stintapp/app/src/main/res/layout/activity_register.xml" value="0.25416666666666665" />
+        <entry key="..\:/ANDROID STUDIO/stintapp/app/src/main/res/layout/activity_time_in.xml" value="0.2" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stint/app/src/main/res/layout/activity_admin.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stint/app/src/main/res/layout/activity_login.xml" value="0.18034447821681865" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stint/app/src/main/res/layout/activity_main.xml" value="0.24592391304347827" />

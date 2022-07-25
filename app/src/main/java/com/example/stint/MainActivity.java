@@ -18,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     TextView verifymsg;
-    Button verifyEmailbtn,aboutus;
+    Button verifyEmailbtn,aboutus,PunchIn;
     FirebaseAuth auth;
 
     @Override
@@ -30,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
 
         verifymsg = findViewById(R.id.verifyemailmsg);
         verifyEmailbtn = findViewById(R.id.verifyemailbtn);
+        PunchIn = findViewById(R.id.punchin);
+
+        PunchIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),TimeIn.class));
+            }
+        });
 
         aboutus = findViewById(R.id.aboutus);
         aboutus.setOnClickListener(new View.OnClickListener() {
