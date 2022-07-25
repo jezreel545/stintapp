@@ -43,13 +43,6 @@ public class Login extends AppCompatActivity {
         reset_alert = new AlertDialog.Builder(this);
         inflater = this.getLayoutInflater();
 
-        Createaccountbtn = findViewById(R.id.createaccountbtn);
-        Createaccountbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),Register.class));
-            }
-        });
 
         username = findViewById(R.id.loginemail);
         password = findViewById(R.id.loginpassword);
