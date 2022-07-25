@@ -59,7 +59,7 @@
         android:id="@+id/TimeInbtn"
         android:layout_width="113dp"
         android:layout_height="52dp"
-        android:layout_marginStart="52dp"
+        android:layout_marginStart="56dp"
         android:layout_marginTop="52dp"
         android:layout_marginBottom="9dp"
         android:text="   Time In  "

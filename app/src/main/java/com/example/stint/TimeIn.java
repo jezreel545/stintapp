@@ -7,8 +7,15 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TimeIn extends AppCompatActivity {
 
@@ -17,10 +24,8 @@ public class TimeIn extends AppCompatActivity {
     String Date;
     TextView GetDateAndTime, GetDateAndTime2;
     Button BtnTimeIn,BtnTimeOut;
-
-
-
-
+    FirebaseAuth auth;
+    FirebaseFirestore fStore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,21 +44,13 @@ public class TimeIn extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 GetDateAndTime.setText(Date);
+                FirebaseUser user = fAuth.getCurrentUser();
+                DocumentReference df = fStore.collection("Users").document(user.getUid());
+                Map<String,Object> userInfo = new HashMap<>();
+                userInfo.put("Fullname",registerfullname.getText().toString());
+                userInfo.put("UserEmail",registeremail.getText().toString());
             }
         });
-
-        BtnTimeOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                GetDateAndTime.setText(Date);
-            }
-        });
-
-
-
-
-
-
 
 
     }

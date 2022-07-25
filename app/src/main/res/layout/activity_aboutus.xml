@@ -6,4 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".Aboutus">
 
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="310dp"
+        android:layout_height="333dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="A startup called Starecase strives to strike a balance between technology and quality of life. It strives to improve the quality of life at the same rate that technology advances. Given the company's aim and mission, starecase is motivated by the desire to increase public awareness of the industry's transparency. The company offers assistance that could lead to a significant stride in the development of new enterprises as well as solutions that can be applied to assist small businesses."
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#4D60CA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

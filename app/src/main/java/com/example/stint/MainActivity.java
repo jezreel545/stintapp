@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
 
         verifymsg = findViewById(R.id.verifyemailmsg);
         verifyEmailbtn = findViewById(R.id.verifyemailbtn);
-        PunchIn = findViewById(R.id.punchin);
 
+        PunchIn = findViewById(R.id.punchin);
         PunchIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
