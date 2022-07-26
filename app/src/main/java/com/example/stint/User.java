@@ -1,13 +1,14 @@
 package com.example.stint;
 
+import android.widget.TextView;
+
 public class User  {
     String FullName, UserEmail;
-
     public User(){}
 
-    public User(String fullName, String userEmail) {
-        FullName = fullName;
-        UserEmail = userEmail;
+    public User(String fullName, String userEmail, long timein, long timeOut) {
+        this.FullName = fullName;
+        this.UserEmail = userEmail;
     }
 
     public String getFullName() {

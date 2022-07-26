@@ -38,8 +38,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.fullname.setText(user.FullName);
         holder.useremail.setText(user.UserEmail);
 
-        //holder.Age.setText(String.valueOf(user.age));
-
     }
 
     @Override

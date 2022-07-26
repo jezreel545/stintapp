@@ -24,7 +24,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Register extends AppCompatActivity {
-    EditText registerfullname,registeremail,registerpassword,registerconfpass;
+    EditText registerfullname,registeremail,registerpassword,registerconfpass,TimeIn, Timeout;
     Button registeruserbtn,gotoLogin;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
@@ -103,8 +103,8 @@ public class Register extends AppCompatActivity {
                             Map<String,Object> userInfo = new HashMap<>();
                             userInfo.put("Fullname",registerfullname.getText().toString());
                             userInfo.put("UserEmail",registeremail.getText().toString());
-                            userInfo.put("Time In", false);
-                            userInfo.put("Time Out", false);
+                            userInfo.put("TimeIn", "00");
+                            userInfo.put("TimeOut", "00");
 
                             // Specify if the user is admin
                             if (isAdmin.isChecked()){

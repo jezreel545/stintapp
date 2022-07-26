@@ -68,7 +68,7 @@ public class Admin extends AppCompatActivity {
         //get all the data from Firestore
     private void EventChangeListener() {
 
-        db.collection("Users").orderBy("Fullname", Query.Direction.ASCENDING)
+        db.collection("Users").orderBy("UserEmail", Query.Direction.ASCENDING)
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {

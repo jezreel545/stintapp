@@ -86,6 +86,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/timein_tv"
                 android:layout_width="294dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
@@ -112,6 +113,7 @@
                 android:textStyle="bold"/>
 
             <TextView
+                android:id="@+id/timeout_tv"
                 android:layout_width="294dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
