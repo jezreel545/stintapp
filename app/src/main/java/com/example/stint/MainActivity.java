@@ -2,6 +2,8 @@ package com.example.stint;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,11 +17,15 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     TextView verifymsg;
     Button verifyEmailbtn,aboutus,PunchIn,PunchOut;
     FirebaseAuth auth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Button logout = findViewById(R.id.logoutbtn);
         auth = FirebaseAuth.getInstance();
+
 
         verifymsg = findViewById(R.id.verifyemailmsg);
         verifyEmailbtn = findViewById(R.id.verifyemailbtn);

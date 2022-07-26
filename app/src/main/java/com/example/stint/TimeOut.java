@@ -34,13 +34,7 @@ public class TimeOut extends AppCompatActivity {
         calendar =Calendar.getInstance();
         simpleDateFormat= new SimpleDateFormat("MM-dd-yyyy HH:mm:ss");
         Date=simpleDateFormat.format(calendar.getTime());
-
-        BtnTimeOut.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                GetDateAndTime.setText(Date);
-            }
-        });
+        GetDateAndTime.setText(Date);
 
 
     }
