@@ -35,7 +35,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         User user = userArrayList.get(position);
 
-        holder.fullname.setText(user.FullName);
         holder.useremail.setText(user.UserEmail);
 
     }
@@ -47,13 +46,12 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView useremail,fullname;
+        TextView useremail;
 
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             useremail = itemView.findViewById(R.id.tvemail);
-            fullname = itemView.findViewById(R.id.tvfullname);
         }
     }
 }

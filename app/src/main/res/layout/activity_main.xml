@@ -10,36 +10,38 @@
         android:id="@+id/punchin"
         android:layout_width="200dp"
         android:layout_height="54dp"
-        android:layout_marginBottom="216dp"
         android:text="Punch In"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/punchout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
         android:id="@+id/punchout"
         android:layout_width="200dp"
         android:layout_height="54dp"
-        android:layout_marginTop="428dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
         android:text="Punch Out"
+        app:layout_constraintBottom_toTopOf="@+id/aboutus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/verifyemailmsg" />
+        app:layout_constraintTop_toBottomOf="@+id/punchin" />
 
     <Button
         android:id="@+id/aboutus"
         android:layout_width="198dp"
         android:layout_height="52dp"
-        android:layout_marginTop="516dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="50dp"
         android:text="About Us"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/punchout" />
 
     <ImageView
         android:id="@+id/imageView"
