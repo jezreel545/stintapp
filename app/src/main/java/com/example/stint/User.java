@@ -2,9 +2,11 @@ package com.example.stint;
 
 import android.widget.TextView;
 
-public class User  {
+public class User {
     String FullName, UserEmail;
-    public User(){}
+
+    public User() {
+    }
 
     public User(String fullName, String userEmail, long timein, long timeOut) {
         this.FullName = fullName;
@@ -27,3 +29,4 @@ public class User  {
         UserEmail = userEmail;
     }
 }
+
