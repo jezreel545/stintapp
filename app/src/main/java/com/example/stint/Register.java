@@ -103,6 +103,8 @@ public class Register extends AppCompatActivity {
                             Map<String,Object> userInfo = new HashMap<>();
                             userInfo.put("Fullname",registerfullname.getText().toString());
                             userInfo.put("UserEmail",registeremail.getText().toString());
+                            userInfo.put("Time In", false);
+                            userInfo.put("Time Out", false);
 
                             // Specify if the user is admin
                             if (isAdmin.isChecked()){

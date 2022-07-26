@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -34,7 +35,14 @@ public class TimeOut extends AppCompatActivity {
         calendar =Calendar.getInstance();
         simpleDateFormat= new SimpleDateFormat("MM-dd-yyyy HH:mm:ss");
         Date=simpleDateFormat.format(calendar.getTime());
-        GetDateAndTime.setText(Date);
+
+        BtnTimeOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                GetDateAndTime.setText(Date);
+                Toast.makeText(TimeOut.this, "Punch", Toast.LENGTH_SHORT).show();
+            }
+        });
 
 
     }

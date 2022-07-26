@@ -74,10 +74,6 @@ public class Admin extends AppCompatActivity {
                     public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
 
                         if (error != null){
-
-                            if (progressDialog.isShowing())
-                                progressDialog.dismiss();
-
                             Log.e("Database Error",error.getMessage());
                             return;
                         }

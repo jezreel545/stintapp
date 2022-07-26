@@ -45,21 +45,21 @@ public class TimeIn extends AppCompatActivity {
         registeremail = findViewById(R.id.registeremail);
         simpleDateFormat= new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
         Date=simpleDateFormat.format(calendar.getTime());
-        GetDateAndTime.setText(Date);
+
+
+
 
 
         BtnTimeIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FirebaseUser user = fAuth.getCurrentUser();
+                GetDateAndTime.setText(Date);
                 Toast.makeText(TimeIn.this, "Punch", Toast.LENGTH_SHORT).show();
-                DocumentReference df = fStore.collection("User").document(user.getUid());
-                Map<String,Object> userInfo = new HashMap<>();
-                userInfo.put("Time In",Timeinview.getText().toString());
-                df.set(userInfo);
+
 
 
             }
+
         });
     }
 }
