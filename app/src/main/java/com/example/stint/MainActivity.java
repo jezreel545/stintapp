@@ -2,8 +2,6 @@ package com.example.stint;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,13 +15,10 @@ import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.firestore.FirebaseFirestore;
-
-import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     TextView verifymsg;
-    Button verifyEmailbtn,aboutus,PunchIn,PunchOut;
+    Button verifyEmailbtn,aboutus,PunchIn,PunchOut,Calendar;
     FirebaseAuth auth;
 
 
@@ -39,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
         verifyEmailbtn = findViewById(R.id.verifyemailbtn);
         PunchIn = findViewById(R.id.punchin);
         PunchOut = findViewById(R.id.punchout);
+        Calendar = findViewById(R.id.btn_schedule);
 
         PunchIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -46,7 +42,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),TimeIn.class));
             }
         });
-
+        Calendar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(),main_activity.class));
+            }
+        });
         PunchOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

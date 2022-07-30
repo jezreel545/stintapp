@@ -28,6 +28,7 @@ import java.util.ArrayList;
 
 public class Admin extends AppCompatActivity {
     Button createaccountbtn;
+    Button Scheduler;
     FirebaseAuth firebaseAuth;
     RecyclerView recyclerView;
     ArrayList<User> userArrayList;
@@ -48,7 +49,13 @@ public class Admin extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(),Register.class));
             }
         });
-
+        Scheduler = findViewById(R.id.btnAdSched);
+        Scheduler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getApplicationContext(), main_activity.class));
+            }
+        });
         //recycle View
 
         recyclerView = findViewById(R.id.recycelView);

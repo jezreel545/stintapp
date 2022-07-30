@@ -121,7 +121,7 @@ public class Register extends AppCompatActivity {
                                 finish();
                             }
                             if (isUser.isChecked()){
-                                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+                                startActivity(new Intent(getApplicationContext(), main_activity.class));
                                 finish();
                             }
 

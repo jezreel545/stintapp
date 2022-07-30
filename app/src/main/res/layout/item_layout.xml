@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="20dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_nana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Nana"/>
+
+        <TextView
+            android:id="@+id/tv_jk"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenis"/>
+
+        <TextView
+            android:id="@+id/tv_jurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jurusan"/>
+        <TextView
+            android:id="@+id/tv_tangal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tangal"/>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

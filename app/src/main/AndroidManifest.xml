@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.stint">
@@ -13,6 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Stint"
         tools:targetApi="31">
+        <activity
+            android:name=".Schedule"
+            android:exported="false" />
+        <activity
+            android:name=".main_activity"
+            android:exported="false" />
         <activity
             android:name=".TimeOut"
             android:exported="false" />
@@ -43,6 +50,9 @@
         <activity
             android:name=".MainActivity"
             android:exported="true" />
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true"/>
     </application>
 
 </manifest>
