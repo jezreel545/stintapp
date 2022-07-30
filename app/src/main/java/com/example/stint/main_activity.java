@@ -199,7 +199,7 @@ public class main_activity extends AppCompatActivity {
                     )).addOnSuccessListener(new OnSuccessListener<Void>() {
                         @Override
                         public void onSuccess(Void aVoid) {
-                            Toast.makeText(context, "Data berhasil ditambahkan", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(context, "Schedule Updated", Toast.LENGTH_SHORT).show();
                             builderAlert.dismiss();
                         }
                     }).addOnFailureListener(new OnFailureListener() {
