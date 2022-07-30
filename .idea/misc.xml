@@ -3,21 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/activity_aboutus.xml" value="0.21979166666666666" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/activity_admin.xml" value="0.264" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/activity_login.xml" value="0.21979166666666666" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/activity_main.xml" value="0.2" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/activity_recycler_view.xml" value="0.25416666666666665" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/activity_register.xml" value="0.190625" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/activity_resetpassword.xml" value="0.190625" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/activity_schedule.xml" value="0.190625" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/activity_time_in.xml" value="0.25" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/activity_time_out.xml" value="0.21979166666666666" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/input_layout.xml" value="0.264" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/item_layout.xml" value="0.253125" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/items.xml" value="0.190625" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/layout/reset_pop.xml" value="0.190625" />
-        <entry key="..\:/ANDROID STUDIO/sdcet/app/src/main/res/menu/option_menu.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stint/app/src/main/res/layout/activity_admin.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stint/app/src/main/res/layout/activity_login.xml" value="0.18034447821681865" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stint/app/src/main/res/layout/activity_main.xml" value="0.24592391304347827" />
@@ -25,6 +10,7 @@
         <entry key="..\:/Users/user/AndroidStudioProjects/Stint/app/src/main/res/layout/activity_resetpassword.xml" value="0.25" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stint/app/src/main/res/layout/reset_pop.xml" value="0.22" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Stint/app/src/main/res/menu/option_menu.xml" value="0.23796296296296296" />
+        <entry key="..\:/Users/user/StudioProjects/stintapp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.146" />
         <entry key="..\:/Users/user/StudioProjects/stintapp/app/src/main/res/drawable/round.xml" value="0.1" />
         <entry key="..\:/Users/user/StudioProjects/stintapp/app/src/main/res/layout/activity_aboutus.xml" value="0.33" />
         <entry key="..\:/Users/user/StudioProjects/stintapp/app/src/main/res/layout/activity_admin.xml" value="0.36666666666666664" />
@@ -37,6 +23,7 @@
         <entry key="..\:/Users/user/StudioProjects/stintapp/app/src/main/res/layout/activity_time_in.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/user/StudioProjects/stintapp/app/src/main/res/layout/activity_time_out.xml" value="0.18802083333333333" />
         <entry key="..\:/Users/user/StudioProjects/stintapp/app/src/main/res/layout/item.xml" value="0.33" />
+        <entry key="..\:/Users/user/StudioProjects/stintapp/app/src/main/res/layout/item_layout.xml" value="0.1105072463768116" />
         <entry key="..\:/Users/user/StudioProjects/stintapp/app/src/main/res/layout/items.xml" value="0.25" />
         <entry key="..\:/Users/user/StudioProjects/stintapp/app/src/main/res/layout/reset_pop.xml" value="0.25" />
         <entry key="..\:/Users/user/StudioProjects/stintapp/app/src/main/res/menu/option_menu.xml" value="0.36666666666666664" />

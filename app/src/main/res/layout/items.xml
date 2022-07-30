@@ -27,8 +27,8 @@
                 android:layout_height="wrap_content"
                 android:text="Full Name"
                 android:textColor="@color/black"
-                android:textSize="26sp"
-                android:textStyle="bold"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvfullname"
@@ -37,7 +37,7 @@
                 android:layout_marginStart="8dp"
                 android:text="Jezpogi"
                 android:textColor="@color/black"
-                android:textSize="26sp"
+                android:textSize="20sp"
                 android:textStyle="" />
         </LinearLayout>
 
@@ -55,8 +55,8 @@
                 android:layout_height="wrap_content"
                 android:text="Email"
                 android:textColor="@color/black"
-                android:textSize="26sp"
-                android:textStyle="bold"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tvemail"
@@ -65,7 +65,7 @@
                 android:layout_marginStart="8dp"
                 android:text="Arya@gmail.com"
                 android:textColor="@color/black"
-                android:textSize="26sp"
+                android:textSize="20sp"
                 android:textStyle="" />
         </LinearLayout>
 
@@ -81,8 +81,8 @@
                 android:layout_height="wrap_content"
                 android:text="Time In"
                 android:textColor="@color/black"
-                android:textSize="26sp"
-                android:textStyle="bold"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/timein_tv"
@@ -91,7 +91,7 @@
                 android:layout_marginStart="8dp"
                 android:text="Time In"
                 android:textColor="@color/black"
-                android:textSize="26sp"
+                android:textSize="20sp"
                 android:textStyle="" />
 
         </LinearLayout>
@@ -108,8 +108,8 @@
                 android:layout_height="wrap_content"
                 android:text="Time Out"
                 android:textColor="@color/black"
-                android:textSize="26sp"
-                android:textStyle="bold"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/timeout_tv"
@@ -118,7 +118,7 @@
                 android:layout_marginStart="8dp"
                 android:text="Time Out"
                 android:textColor="@color/black"
-                android:textSize="26sp"
+                android:textSize="20sp"
                 android:textStyle="" />
 
 
