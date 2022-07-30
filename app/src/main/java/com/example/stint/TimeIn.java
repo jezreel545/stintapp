@@ -27,7 +27,7 @@ public class TimeIn extends AppCompatActivity {
     SimpleDateFormat simpleDateFormat;
     String Date;
     TextView GetDateAndTime,Timeinview;
-    Button BtnTimeIn,BtnTimeOut;
+    Button BtnTimeIn;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
 
@@ -41,7 +41,7 @@ public class TimeIn extends AppCompatActivity {
         GetDateAndTime=findViewById(R.id.TimeInView);
         BtnTimeIn=findViewById(R.id.TimeInbtn);
         calendar =Calendar.getInstance();
-        simpleDateFormat= new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+        simpleDateFormat= new SimpleDateFormat("MM-dd-yyyy HH:mm:ss");
         Date=simpleDateFormat.format(calendar.getTime());
 
 

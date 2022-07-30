@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Janis Kelamin" />
+        android:text="Select One" />
 
     <RadioGroup
         android:id="@+id/rb_group"
@@ -45,7 +45,7 @@
             android:id="@+id/rb_perempuan"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Perempuan" />
+            android:text="Scheduled" />
     </RadioGroup>
 
     <EditText
