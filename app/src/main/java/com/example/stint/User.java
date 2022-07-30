@@ -3,22 +3,24 @@ package com.example.stint;
 import android.widget.TextView;
 
 public class User {
-    String FullName, UserEmail;
+    String Fullname, UserEmail, TimeIn, TimeOut;
 
     public User() {
     }
 
-    public User(String fullName, String userEmail, long timein, long timeOut) {
-        this.FullName = fullName;
+    public User(String fullName, String userEmail, String timeOut, String timeIn) {
+        this.Fullname = fullName;
         this.UserEmail = userEmail;
+        this.TimeIn = timeIn;
+        this.TimeOut = timeOut;
     }
 
-    public String getFullName() {
-        return FullName;
+    public String getFullname() {
+        return Fullname;
     }
 
-    public void setFullName(String fullName) {
-        FullName = fullName;
+    public void setFullname(String fullName) {
+        Fullname = fullName;
     }
 
     public String getUserEmail() {
@@ -27,6 +29,22 @@ public class User {
 
     public void setUserName(String userEmail) {
         UserEmail = userEmail;
+    }
+
+    public String getTimeIn() {
+        return TimeIn;
+    }
+
+    public void setTimeIn(String timeIn) {
+        TimeIn = timeIn;
+    }
+
+    public String getTimeOut() {
+        return TimeOut;
+    }
+
+    public void setTimeOut(String timeOut) {
+        TimeOut = timeOut;
     }
 }
 

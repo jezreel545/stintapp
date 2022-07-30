@@ -35,7 +35,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         User user = userArrayList.get(position);
 
+        holder.fullname.setText(user.Fullname);;
         holder.useremail.setText(user.UserEmail);
+        holder.timein.setText(user.TimeIn);
+        holder.timeout.setText(user.TimeOut);
 
     }
 
@@ -46,12 +49,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView useremail;
+        TextView useremail,timein,timeout,fullname;
 
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             useremail = itemView.findViewById(R.id.tvemail);
+            timein = itemView.findViewById(R.id.timein_tv);
+            timeout = itemView.findViewById(R.id.timeout_tv);
+            fullname = itemView.findViewById(R.id.tvfullname);
         }
     }
 }

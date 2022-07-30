@@ -16,13 +16,13 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class TimeIn extends AppCompatActivity {
 
 
-    EditText registerfullname, registeremail;
     Calendar calendar;
     SimpleDateFormat simpleDateFormat;
     String Date;
@@ -41,10 +41,9 @@ public class TimeIn extends AppCompatActivity {
         GetDateAndTime=findViewById(R.id.TimeInView);
         BtnTimeIn=findViewById(R.id.TimeInbtn);
         calendar =Calendar.getInstance();
-        registerfullname = findViewById(R.id.registerfullname);
-        registeremail = findViewById(R.id.registeremail);
         simpleDateFormat= new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
         Date=simpleDateFormat.format(calendar.getTime());
+
 
 
 
@@ -54,9 +53,13 @@ public class TimeIn extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 GetDateAndTime.setText(Date);
+                FirebaseUser user = fAuth.getCurrentUser();
                 Toast.makeText(TimeIn.this, "Punch", Toast.LENGTH_SHORT).show();
+                DocumentReference df = FirebaseFirestore.getInstance().collection("Users").document(user.getUid());
+                Map<String,Object> userInfo = new HashMap<>();
+                userInfo.put("TimeIn", Date);
 
-
+                df.update(userInfo);
 
             }
 

@@ -25,7 +25,7 @@ public class Schedule extends AppCompatActivity {
         });
     }
     public void openactivity_recycler_view(){
-        Intent intent = new Intent(this, main_activity.class);
+        Intent intent = new Intent(this, main_activity.class); //BUGG code
         startActivity(intent);
     }
 }
